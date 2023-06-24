@@ -1,74 +1,34 @@
+import Clases.SmartPhone;
+import Clases.SmartWatch;
+
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("----Condicional if------.");
 
-        var numero = 5;
+        SmartPhone smartPhone = new SmartPhone();
+        smartPhone.marca = "Samsung";
+        smartPhone.modelo = "A 71";
+        smartPhone.bateria = "5200 Mha";
+        smartPhone.pantalla = "LCD";
+        smartPhone.puertoCarga = "Tipo C";
+        smartPhone.sistemaOperativo = "Android 11";
+        smartPhone.peso = 163d;
+        smartPhone.tamano = 6.5d;
 
-        if (numero > 0) {
-            System.out.println(" El numero es: Positivo ");
-        } else {
-
-            System.out.println(" El numero es: Negativo");
-        }
-
-        System.out.println("------------------------.");
-        System.out.println("------Bucle While-------.");
-       var numeroWhile = 0;
-
-        while (numeroWhile <=3){
-            System.out.println(numeroWhile);
-            numeroWhile = numeroWhile + 1;
-
-        }
-        System.out.println("------------------------.");
-        System.out.println("------Bucle Do While----.");
+        System.out.println(smartPhone + smartPhone.marca);
 
 
-        var numeroDoWhile = 2;
+        SmartWatch smartWatch = new SmartWatch();
+        smartWatch.duracionBat = "9 Horas";
+        smartWatch.tipoCorrea = "Cuero";
+        smartWatch.tiempoGarantia = "12 Meses";
+        smartWatch.puertoCarga = "Micro";
+        smartWatch.sistemaOperativo = "Android 10";
+        smartWatch.resistenteAgua = true;
+        smartWatch.marca = "LG";
 
-        do {
-            System.out.println( numeroDoWhile);
-            numeroDoWhile = numeroDoWhile -1;
-        } while ( numeroDoWhile > 0);
-        System.out.println("------------------------.");
-        System.out.println("------Ciclo For---------.");
+        System.out.println(smartWatch);
 
-
-        var numeroFor = 0;
-
-        for (numeroFor =1; numeroFor <= 3; numeroFor ++) {
-            System.out.println(numeroFor);
-        }
-        System.out.println("------------------------.");
-        System.out.println("------Switch Case-------.");
-
-        var estacion = "verano";
-
-        switch (estacion) {
-            case "otoño":
-                System.out.println(" Es la Estacion de: Otoño");
-
-                break;
-
-            case "invierno":
-                System.out.println(" Es la Estacion de: Invierno");
-
-                break;
-            case "verano":
-                System.out.println("Es la Estacion de: Verano");
-
-                break;
-            case "primavera":
-
-                System.out.println(" Es la Estacion de: Primavera");
-                break;
-
-            default:
-                System.out.println(" No es una Estacion del año");
-                break;
-        }
-        System.out.println("------------------------.");
 
     }
 }
